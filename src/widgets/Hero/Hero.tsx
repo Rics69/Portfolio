@@ -1,7 +1,8 @@
 const Hero = () => {
     return (
         <div>
-            Hero block
+            <img src="" alt="Данил Клементьев"/>
+            <h1></h1>
         </div>
     );
 };
