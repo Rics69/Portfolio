@@ -12,7 +12,7 @@ import {
     SheetHeader,
     SheetTitle,
     SheetTrigger,
-} from "@/components/ui/sheet";
+} from "@/entities/sheet/sheet";
 
 export default function Menu() {
     const pathname = usePathname();
