@@ -31,7 +31,6 @@ export default function Menu() {
         []
     );
 
-    // Theme handling (no external provider needed)
     useEffect(() => {
         setMounted(true);
         const saved = typeof window !== "undefined" && localStorage.getItem("theme");
@@ -64,7 +63,6 @@ export default function Menu() {
     return (
         <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 dark:supports-[backdrop-filter]:bg-neutral-900/60 border-b border-black/5 dark:border-white/10">
             <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-                {/* Left: Logo */}
                 <div className="flex items-center gap-3">
                     <Link href="/" className="group inline-flex items-center gap-2">
                         <div className="h-9 w-9 rounded-2xl bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 shadow-md transition-transform group-hover:scale-105" />
@@ -74,7 +72,6 @@ export default function Menu() {
                     </Link>
                 </div>
 
-                {/* Desktop: nav links */}
                 <div className="hidden items-center gap-1 md:flex">
                     {links.map((link) => (
                         <Link
@@ -94,7 +91,6 @@ export default function Menu() {
                     ))}
                 </div>
 
-                {/* Right: actions */}
                 <div className="flex items-center gap-2">
                     <Button
                         onClick={toggleTheme}
@@ -123,7 +119,6 @@ export default function Menu() {
                         </Link>
                     </Button>
 
-                    {/* Mobile menu trigger */}
                     <Sheet open={open} onOpenChange={setOpen}>
                         <SheetTrigger asChild>
                             <Button variant="ghost" size="icon" className="md:hidden rounded-2xl" aria-label="Open menu">
