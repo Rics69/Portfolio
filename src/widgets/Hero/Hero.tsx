@@ -7,7 +7,7 @@ const Hero = () => {
             <h1>Я Клементьев Данил</h1>
             <ul>
                 <li><Link href='https://t.me/sstarweb'>Telegram</Link></li>
-                <li><Link href='/'>Github</Link></li>
+                <li><Link href='https://github.com/Rics69'>Github</Link></li>
                 <li><Link href='/'>Mail</Link></li>
             </ul>
         </div>
