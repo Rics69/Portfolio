@@ -8,7 +8,7 @@ const Hero = () => {
             <ul>
                 <li><Link href='https://t.me/sstarweb'>Telegram</Link></li>
                 <li><Link href='https://github.com/Rics69'>Github</Link></li>
-                <li><Link href='/'>Mail</Link></li>
+                <li><Link href='mailto:danil.klementev.29@gmail.com'>Mail</Link></li>
             </ul>
         </div>
     );
